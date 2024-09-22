@@ -28,23 +28,23 @@ nav#nav-bar {
   align-items: center;
 }
 
-.nav-link {
+.nav-link-container {
   display: flex;
   list-style-type: none;
 }
 
-.nav-link li {
+.nav-link-container li {
   margin: 0 25px 0 25px;
 }
 
-.nav-link li a {
+.nav-link {
   text-decoration: none;
   color: #101041;
   font-size: 16px;
   font-weight: 400;
 }
 
-.nav-link li a:hover {
+.nav-link:hover {
   color: #3a38ff;
   font-weight: 600;
 }
@@ -385,7 +385,7 @@ nav#nav-bar {
     align-items: center;
   }
 
-  .nav-link {
+  .nav-link-container {
     display: none;
     list-style-type: none;
   }
