@@ -26,6 +26,14 @@ nav#nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: calc(100% - 200px);
+  z-index: 1000;
 }
 
 .nav-link-container {
@@ -76,7 +84,7 @@ nav#nav-bar {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 70px 0 70px 0;
+  margin: 170px 0 70px 0;
   align-items: center;
 }
 
@@ -351,8 +359,18 @@ nav#nav-bar {
   margin-bottom: 16px;
 }
 
-.booking-form-button a {
+.booking-form-button input {
   width: 100%;
+  background-color: #3a38ff;
+  padding: 12px 20px 12px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: 0;
 }
 
 ::placeholder {
@@ -369,6 +387,41 @@ nav#nav-bar {
   text-decoration: none;
 }
 
+#stories {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.stories-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.stories-title p {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.stories-profile {
+  margin-top: 14px;
+}
+
+.stories-profile .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stories-profile .profesion {
+  font-size: 16px;
+  font-weight: 300;
+  color: #b5b5b5;
+}
+
+.stories-cta {
+  margin-top: 40px;
+}
+
 @media only screen and (max-width: 820px) {
   .container-navbar {
     margin-left: 0;
@@ -376,13 +429,12 @@ nav#nav-bar {
   }
 
   nav#nav-bar {
-    background-color: #ffffff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 33px 30px 33px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    left: 0;
   }
 
   .nav-link-container {
@@ -403,7 +455,7 @@ nav#nav-bar {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 30px 0 30px 0;
+    margin: 160px 0 30px 0;
     align-items: center;
   }
 
@@ -469,5 +521,11 @@ nav#nav-bar {
 
   .booking-main-wrapper img {
     display: none;
+  }
+
+  .stories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
